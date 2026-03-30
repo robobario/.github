@@ -22,14 +22,15 @@ You can contribute by:
 * Talking about Kroxylicious
 
 All bugs, tasks or enhancements are tracked as GitHub issues.
-Issues which might be a good start for new contributors are marked with the “good-start” label.
+Issues which might be a good start for new contributors are marked with the "good-start" label.
+Public API changes are required to follow the [Design Process](#design-process)
 
 ## Finding an Issue
 
 We have issues labelled [good first issue](https://github.com/kroxylicious/kroxylicious/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) for new contributors and [help wanted](https://github.com/kroxylicious/kroxylicious/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22help%20wanted%22) issues suitable for any contributor. 
 
-Sometimes there won’t be any issues with these labels. That’s ok! There is likely still something for you to work on. If you want to contribute but you
-don’t know where to start or can't find a suitable issue, you can come [chat to us](https://kroxylicious.slack.com/archives/C050RNMQW8G).
+Sometimes there won't be any issues with these labels. That's ok! There is likely still something for you to work on. If you want to contribute but you
+don't know where to start or can't find a suitable issue, you can come [chat to us](https://kroxylicious.slack.com/archives/C050RNMQW8G).
 
 Once you see an issue that you'd like to work on, please post a comment saying that you want to work on it. Something like "I want to work on this" is fine.
 If later you need to change your mind, for whatever reason, that's fine too. Just post another message so others know its free.
@@ -83,6 +84,24 @@ The PR submitter is responsible for understanding their contribution and ensurin
   We may close pull requests where the contributor does not appear to understand the contribution they have submitted.
 * **Be concise.** AI tools can generate content faster than reviewers can read it.
   Contributions, PR descriptions, and issue comments should be clear, focused, and free of unnecessary detail. Please respect the time of the other contributors in the community.
+
+## Design Process
+
+All Public API changes must begin with a design proposal. This includes:
+
+* New APIs or API endpoints
+* Changes to existing API signatures or behavior
+* Removal or deprecation of APIs
+
+Public APIs include (but are not limited to):
+* Proxy configuration YAML
+* Filter configuration YAML
+* Kubernetes CRDs
+* Operator manifested resources (like public bootstrap server addresses)
+* Filter API (and other plugins) interfaces
+* Wire-protocol changes (e.g. format of encrypted data emitted by Proxy)
+
+Design proposals should be submitted to the [design repository](https://github.com/kroxylicious/design).
 
 ## I just have a question
 
