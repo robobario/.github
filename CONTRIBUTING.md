@@ -16,6 +16,7 @@ Individual repositories include a `README.md` with context, build, and usage ins
 You can contribute by:
 
 * Reporting any issues you find using Kroxylicious
+* Proposing [Design](#design-proposals) changes to Public APIs
 * Fixing issues by opening Pull Requests
 * Reviewing Pull Requests opened by others.
 * Improving documentation
@@ -23,6 +24,19 @@ You can contribute by:
 
 All bugs, tasks or enhancements are tracked as GitHub issues.
 Issues which might be a good start for new contributors are marked with the “good-start” label.
+
+## Design Proposals
+
+All public API changes require a Design Proposal.
+Design Proposals are created via a PR into the [Design](https://github.com/kroxylicious/design/) repository.
+Public APIs include:
+
+- Proxy Configuration YAML
+- Kubernetes Custom Resource Definitions
+
+Note: we will add a comprehensive listing of public APIs in future.
+
+Please advertise new proposals by posting on the kroxylicious-dev [mailing list](https://kroxylicious.io/join-us/mailing-lists/).
 
 ## Finding an Issue
 
