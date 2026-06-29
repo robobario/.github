@@ -95,14 +95,16 @@ All Public API changes must begin with a design proposal. This includes:
 
 Public APIs include (but are not limited to):
 * Proxy configuration YAML
-* Filter configuration YAML
+* Plugin configuration YAML (for 1st party plugins shipped with the project)
 * Kubernetes CRDs
-* Operator manifested resources (like public bootstrap server addresses)
+* Operator-managed connectivity surfaces that clients depend on (e.g. bootstrap server hostnames and ports)
 * Filter API (and other plugins) interfaces
-* Wire-protocol changes (e.g. format of encrypted data emitted by Proxy)
+* Public APIs surfaced by 1st party plugins shipped with Kroxylicious, including but not limited to:
+  * record headers added or mutated by the plugin
+  * how a plugin mutates record keys or values (including the parcelling format used by record encryption)
 
 Design proposals should be submitted to the [design repository](https://github.com/kroxylicious/design).
-After creating a design proposal, once it is ready for review, please advertise it on the kroxylicious-dev@googlegroups.com [mailing list](https://kroxylicious.io/join-us/mailing-lists).
+After creating a design proposal, please advertise it on the kroxylicious-dev@googlegroups.com [mailing list](https://kroxylicious.io/join-us/mailing-lists) when it is ready for review and again when it is merged.
 
 ## I just have a question
 
